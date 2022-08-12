@@ -1,0 +1,43 @@
+
+
+/* EXPERIENCE */
+.experience{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &__badge{
+       width: 38%; 
+    }
+    &__list{
+        list-style-type: ' - ';
+        padding-left: 45px;
+        li:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.experience-badge{
+    background-color: $color-middle-lighter;
+    padding: 30px;
+    text-align: center;
+    &__number{
+        font-family: $title-font;
+        color: $color-accent;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 88px;
+        letter-spacing: 0.36px;
+        margin-bottom: 15px;
+    }
+    &__text{
+        font-family: $title-font;
+        color: $color-main;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.36px;       
+    }
+}

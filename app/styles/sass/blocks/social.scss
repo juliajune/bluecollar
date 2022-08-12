@@ -1,0 +1,19 @@
+/* SOCIALA MENU */
+.social{
+    display: flex;
+    align-items: center; 
+    margin: 0 -10px;  
+    &__item{
+        padding: 0 10px;
+    }
+    &__link{
+        display: block;
+        color: $color-main;
+        transition: $transition-time;
+        font-size: 20px;
+        &:hover{
+            color: $color-accent;
+            transition: $transition-time;
+        }        
+    }
+}

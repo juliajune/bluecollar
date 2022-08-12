@@ -1,0 +1,44 @@
+/* ROUND ICON */
+.round-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: $color-middle;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    &_accent{
+        background-color: $color-accent;
+        color: $color-main;       
+    }   
+    &_light{
+        background-color: $color-light;
+        color: $color-main;        
+    }
+    &_dark{
+        background-color: $color-main-light;
+        color: $color-light;      
+    }
+    &_big{
+        width: 68px;
+        height: 68px;
+        line-height: 68px;
+        font-size: 26px;
+    }
+    &_middle{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 26px;
+    }
+    
+}
+
+a.round-icon.round-icon_dark{
+    &:hover{
+        background-color: $color-accent; 
+        color: $color-main-light;          
+    }
+}

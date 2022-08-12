@@ -1,0 +1,123 @@
+/* PLANS */
+
+.plans{
+    padding: 150px 0 80px 0;
+    &__header{
+        margin-bottom: 58px;
+    }
+    &__preamble{
+        margin-bottom: 22px;
+    }
+    &__description{
+        margin-top: 30px;
+    }
+    &__content{
+        margin-bottom: 60px;
+    }    
+}
+
+
+/* SINGLE PRICE PLAN */
+.plan{
+    background-color: $color-light;
+    padding: 40px 40px 45px 40px;
+    height: 100%;
+    display: flex;          
+    flex-direction: column; 
+    &__content{
+        flex: 1 1 auto;
+    }
+    &__header{
+        border-bottom: 1px solid $color-middle-to-light;
+        padding-bottom: 40px;        
+    }
+    &__header-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom: 8px;
+        }
+    }    
+    &__title{
+        font-family: $text-font;
+        color: $color-main;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.4px;
+        text-align: left;
+       
+    }
+    &__price{
+        font-family: $title-font;
+        color: $color-main;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0.36px;
+        text-align: left;
+
+    }
+    &__label{
+        font-family: $text-font;
+        color: $color-main;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        text-align: left;
+        background-color: $color-accent;
+        padding: 0 10px;
+
+    }
+    &__notes{
+        font-family: $text-font;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        align-self: baseline;
+       
+    }
+    &__list{
+        padding: 30px 0;
+    }
+    &__list-item{
+        position: relative;
+        font-family: $text-font;
+        color: $color-middle;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.36px;
+        padding-left: 30px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        &:before{
+            content: '✓'; 
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $color-light;
+            border: 2px solid $color-accent;
+            color: $color-accent;  
+            text-align: center; 
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            left: 0;
+            top: 1px;            
+        } 
+    }
+    &__button{
+        width: 100%;
+    }
+    
+    
+}

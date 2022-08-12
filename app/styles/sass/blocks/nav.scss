@@ -1,0 +1,37 @@
+.nav{
+    
+    min-height: 40px;
+    
+    &__list{
+        background-color: $color-accent;
+        display: flex;
+        align-items: center;       
+        flex-direction: row;
+    }
+    &__item{
+        padding: 20px 26px;
+    }
+    &__link{
+        display: inline-block;
+        transition: $transition-time;
+        padding-bottom: 2px;
+        border: 1px solid transparent;
+        color: $color-main;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-family: $text-font;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.36px;
+        &:hover{
+            color:  $color-light;
+            transition: $transition-time;
+        }
+        &_active{
+            color:  $color-light;
+            pointer-events: none;
+        }
+    }
+
+}

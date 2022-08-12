@@ -1,0 +1,50 @@
+/* SERVICES */
+.services{    
+    padding: 250px 0 118px 0;
+}
+
+.service{
+    background-color: $color-main;
+    padding: 48px 35px;
+    display: flex;           
+    flex-direction: column;  
+    height: 100%;
+    &__content{
+        flex: 1 1 auto;
+        margin-bottom: 22px;
+    }
+    &__icon{
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin-bottom: 30px;
+        fill: $color-accent;
+    }
+    &__title{
+        font-family: $title-font;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.36px;
+        text-align: left;
+        color: $color-accent; 
+        margin-bottom: 17px;      
+    }
+
+    &__text{
+        font-size: 18px;
+        color: $color-middle-light;
+        align-items: justify;
+        
+    }
+
+    &__more{
+        text-transform: capitalize;
+        text-decoration: none;
+        transition-duration: $transition-time;
+        color: $color-light;
+        &:hover{
+            color: $color-accent;            
+        }
+    }
+}

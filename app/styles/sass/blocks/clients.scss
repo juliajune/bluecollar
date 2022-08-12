@@ -1,0 +1,13 @@
+/* CLIENTS */
+.clients{
+    padding: 30px 0px 125px 0px;
+}
+
+/* CLIENTS SLIDER */
+.clients-slider{
+    position: relative;
+    overflow: hidden;
+    &__slide{
+        text-align: center;
+    }
+}

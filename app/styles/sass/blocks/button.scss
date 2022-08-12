@@ -1,0 +1,39 @@
+/*-- BUTTON --*/
+.button{
+    display: block;
+    background-color: $color-accent;
+    color: $color-main;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px;
+    transition: $transition-time;
+    box-shadow: none;
+    border: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    font-family: $text-font;
+    &:hover{
+        background-color: $color-main;
+        color: $color-accent;
+        cursor: pointer;
+    }  
+    &_light{
+        background-color: $color-light;
+    }
+    &_dark{
+        background-color: $color-main;
+        border: 1px solid $color-main;
+        color: $color-light;
+        &:hover{
+            background-color: $color-light;
+            color: $color-main;
+        }
+    }
+    &_small{
+        font-size: 17px;
+        line-height: 27px;
+        
+    }
+}
+/*-- /BUTTON --*/

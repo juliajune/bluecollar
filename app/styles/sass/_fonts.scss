@@ -1,0 +1,23 @@
+// FONTS LOAD SECTION
+$title-font: Milush, sans-serif;
+$text-font: Inter, sans-serif;
+
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+        font-display: swap;
+    }
+}
+
+
+
+@include font-face("Milush", "../fonts/milush/Milush-Regular", 400);
+
+@include font-face("Inter", "../fonts/inter/Inter-Regular", 400);
+@include font-face("Inter", "../fonts/inter/Inter-Bold", 700);
+

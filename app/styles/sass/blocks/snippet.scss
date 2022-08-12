@@ -1,0 +1,57 @@
+/* SNIPPET */
+.snippet{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    &__icon{
+        margin-right: 15px;
+    }
+    &__title{
+        font-family: $title-font;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.36px;
+        text-transform: capitalize;
+    }
+    &__text, &__link{
+        font-family: $text-font;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.36px;        
+    } 
+    &__link{
+        text-decoration: none;
+    }
+    &_light{
+        color: $color-light;       
+    }     
+    
+    &_light &__text{
+        color: $color-light;  
+    } 
+    &_light &__link{
+        color: $color-light;  
+        transition: $transition-time;
+        &:hover{
+            color: $color-accent;
+            transition: $transition-time;
+        }
+    } 
+    &_dark{
+        color: $color-main;
+    }
+    &_dark &__text{
+        color: $color-light;  
+    } 
+    &_dark &__link{
+        color: $color-middle;  
+        transition: $transition-time;
+        &:hover{
+            color: $color-accent;
+            transition: $transition-time;
+        }
+    } 
+}

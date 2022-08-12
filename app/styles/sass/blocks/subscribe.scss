@@ -1,0 +1,19 @@
+/* SUBSCRIBE */
+.subscribe{
+    padding: 145px 0px 50px 0px;
+    color: $color-main;
+    &__title{
+        margin-bottom: 10px;
+    }
+}
+.subscribe-field{
+    display: flex;
+    align-items: center;
+    flex-direction: wrap;
+    &__input{
+        flex-grow: 1;
+    }
+    &__button{
+        min-width: 180px;
+    }
+}

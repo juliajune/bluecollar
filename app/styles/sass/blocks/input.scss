@@ -1,0 +1,48 @@
+/*-- INPUT --*/
+.input{
+    display: block;
+    background-color: $color-light;
+    font-size: 17px;
+    line-height: 27px;
+    color: $color-middle;
+    padding: 18px;
+    border: 1px solid $color-middle-normal;
+    transition: $transition-time;
+    //width: 100%;
+    padding: 18px 44px;
+    &:focus{
+        border-color: $color-main;  
+    }
+    &::placeholder{
+        color: $color-main;
+        opacity: 1;
+        transition: $transition-time;
+        text-transform: capitalize;
+    }
+    &:focus::placeholder{
+        opacity: 0;
+        transition: $transition-time;
+    }
+    &_light{
+        background-color: transparent;
+        border-color: $color-light;
+        color: $color-light;
+        &::placeholder{
+            color: $color-light;          
+        }
+        &:focus{
+            border-color: $color-main;  
+        }
+    }
+}
+.input:focus{
+    //border-color: $color-gray;
+    transition: $transition-time;
+}
+.field-error{
+    //border-color: $color-error; 
+}
+.field-succes{
+    //border-color: $color-succes; 
+}
+/*-- /INPUT --*/
