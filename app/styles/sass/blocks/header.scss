@@ -1,50 +1,66 @@
 /* HEADER */
-.header{
-    &__top{
-        background-color: $color-middle-lighter;
-        color: $color-main;
+
+.mobile-header{
+    display: block;
+}
+.desktop-header{
+    display: none;
+}
+
+@media screen and (min-width : 1200px) {
+    .mobile-header{
+        display: none;
     }
-    &__top-content{
-        min-height: 66px;
-        padding: 16px 0px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+    .desktop-header{
+        display: block;
+        &__top{
+            background-color: $color-middle-lighter;
+            color: $color-main;
+        }
+        &__top-content{
+            min-height: 66px;
+            padding: 16px 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__search-form{
+            margin-right: 30px;
+        }
+        &__bottom{
+            background-color: $color-light;
+            position: relative;      
+        }
+        &__bottom-content{       
+            padding: 35px 0px 55px 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__contacts{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__question{
+            min-width: 300px;
+        }
+        &__snippet:not(:last-child){
+            margin-right: 80px;
+        }
+        &__nav{
+            position: absolute;
+            bottom: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            width: 100%;
+        }    
     }
-    &__bottom{
-        background-color: $color-light;
-        position: relative;      
-    }
-    &__bottom-content{       
-        padding: 35px 0px 55px 0px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__contacts{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__question{
-        min-width: 300px;
-    }
-    &__snippet:not(:last-child){
-        margin-right: 80px;
-    }
-    &__nav{
-        position: absolute;
-        bottom: -40%;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 99;
-        width: 100%;
-    }
-    
 }

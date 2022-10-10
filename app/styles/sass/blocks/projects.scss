@@ -1,6 +1,9 @@
 /* PROJECTS */
 .projects{
-    padding: 150px 0 130px 0;
+    padding: 40px 0px;
+    @media screen and (min-width: 1024px){
+        padding: 150px 0 130px 0;
+    }
     &__title{
         margin-bottom: 50px;
     }
@@ -67,6 +70,19 @@
         font-weight: 400;
         line-height: 27px;
         letter-spacing: 0.36px;
-        text-align: center;
+        text-align: center;       
+    }
+    &_gray-bg{
+        background-color: $color-middle-lighter;
+    }
+}
+
+a.project__category{
+    text-decoration: none;
+    transition: $transition-time;
+    display: block;
+    text-align: center;
+    &:hover{
+        color: $color-accent;
     }
 }

@@ -1,0 +1,21 @@
+/* Table */
+.table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+    thead th{
+        color: $color-gray-dark;
+        background-color: $color-gray-middle;
+    }
+}
+
+.table tbody td, .table thead th, .table tfoot th {
+    padding: 15px 20px 13px 20px;
+    font-weight: normal;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: $color-gray-light;
+}

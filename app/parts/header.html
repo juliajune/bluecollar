@@ -10,77 +10,107 @@
 	<meta property="og:image" content="images/dist/preview.jpg">
 	
 	<link rel="stylesheet" href="css/app.min.css">
+    
 </head>
 <body>
-    <header class="header">
-        <!-- header top-->
-        <div class="header__top">
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <!-- MOBILE HEADER -->
+        <header class="mobile-header">
             <div class="container">
                 <div class="row">
-                    <div class="header__top-content">
-                        <div class="header__top-side">Opening Hours: 06:00 to 20:00</div>
-                        <div class="header__top-side">
-                            <!-- social menu-->
-                            <ul class="social">
-                                <li class="social__item"><a href="https://facebook.com" class="social__link"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li class="social__item"><a href="https://twitter.com" class="social__link"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li class="social__item"><a href="https://www.pinterest.com" class="social__link"> <i class="fa-brands fa-pinterest"></i></a></li>
-                                <li class="social__item"><a href="https://www.instagram.com/" class="social__link"><i class="fa-brands fa-instagram"></i></a></li>
-                            </ul>   
-                             <!-- social menu-->                         
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div> 
-        <!-- /header top--> 
-        <!-- header bottom --> 
-        <div class="header__bottom">
-            <div class="container">
-                <div class="row">                    
-                    <div class="header__bottom-content">
-                        <div class="header__bottom-side">
-                            <div class="footer__logo logo"><img src="images/dist/logo-dark.svg" alt="BlueCollar" title="BlueCollar" class="logo__image"></div>
-                        </div>
-                        <div class="header__bottom-side header__contacts">
-                            <div class="header__snippet snippet snippet_dark">
-                                <span class="snippet__icon round-icon round-icon_accent round-icon_big"><i class="fa-regular fa-envelope"></i></span>
-                                <div class="snippet__content">
-                                    <h5 class="snippet__title">mail us</h5>
-                                    <a href="Info@bluecollar.com" class="snippet__link" target="_blank">Info@bluecollar.com</a>							
-                                </div>
-                            </div>
-                            <div class="header__snippet snippet snippet_dark">
-                                <span class="snippet__icon round-icon round-icon_accent round-icon_big"><i class="fa-solid fa-phone"></i></span>
-                                <div class="snippet__content">
-                                    <h5 class="snippet__title">call us</h5>
-                                    <a href="tel:+01569896654" target="_blank" class="snippet__link">+01 569 896 654</a>						
-                                </div>
-                            </div>
-                            <a href="#" class="header__question button button_dark">Have Any Questions?</a>
-                        </div>
+                    <div class="col-12">
+                         mobile header
                     </div>
                 </div>
             </div>
-            <!-- Header navigation -->
-            <nav class="header__nav nav">
+        </header>
+        <!-- /MOBILE HEADER -->
+
+        <!-- DESKTOP HEADER -->
+        <header class="desktop-header">
+            <!-- header top-->
+            <div class="desktop-header__top">
                 <div class="container">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link nav__link_active">home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">pages</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">blog</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">contact us</a></li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="desktop-header__top-content">
+                                <div class="desktop-header__top-side">Opening Hours: 06:00 to 20:00</div>
+                                <div class="desktop-header__top-side d-flex">
+                                    <!--search form-->
+                                    <div class="desktop-header__search-form search-form">
+                                        <input class="search-form__input input input_small" placeholder="Search for...">
+                                        <a href="search-result.html" class="button button_smaller"><i class="fa-solid fa-magnifying-glass"></i></a>                                        
+                                    </div>
+                                    <!--/search form -->
+                                    <!-- social menu-->
+                                    <ul class="social">
+                                        <li class="social__item"><a href="https://facebook.com" class="social__link"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li class="social__item"><a href="https://twitter.com" class="social__link"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li class="social__item"><a href="https://www.pinterest.com" class="social__link"> <i class="fa-brands fa-pinterest"></i></a></li>
+                                        <li class="social__item"><a href="https://www.instagram.com/" class="social__link"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>   
+                                    <!-- social menu-->                         
+                                </div>
+                            </div>
+                        </div>                                     
+                    </div>
                 </div>
-            </nav> 
-            <!-- /Header navigation -->                    
-        </div>        
-        <!-- /header bottom -->      
-    </header>
-    <!--
-    <div class="test">
-        <div class="test__top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit optio architecto vel porro earum blanditiis dolore dolorum autem nemo maiores.</div>
-        <div class="test__bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error nesciunt voluptatibus maxime voluptate rem perspiciatis optio eaque qui. Sequi.</div>
-    </div>
--->
+            </div> 
+            <!-- /header top--> 
+            <!-- header bottom --> 
+            <div class="desktop-header__bottom">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col-12">
+                            <div class="desktop-header__bottom-content">
+                                <div class="desktop-header__bottom-side">
+                                    <div class="footer__logo logo"><img src="images/dist/logo-dark.svg" alt="BlueCollar" title="BlueCollar" class="logo__image"></div>
+                                </div>
+                                <div class="desktop-header__bottom-side desktop-header__contacts">
+                                    <div class="desktop-header__snippet snippet snippet_dark">
+                                        <span class="snippet__icon round-icon round-icon_accent round-icon_big"><i class="fa-regular fa-envelope"></i></span>
+                                        <div class="snippet__content">
+                                            <h5 class="snippet__title">mail us</h5>
+                                            <a href="mailto:Info@bluecollar.com" class="snippet__link" target="_blank">Info@bluecollar.com</a>	                                            						
+                                        </div>
+                                    </div>
+                                    <div class="desktop-header__snippet snippet snippet_dark">
+                                        <span class="snippet__icon round-icon round-icon_accent round-icon_big"><i class="fa-solid fa-phone"></i></span>
+                                        <div class="snippet__content">
+                                            <h5 class="snippet__title">call us</h5>
+                                            <a href="tel:+01569896654" target="_blank" class="snippet__link">+01 569 896 654</a>						
+                                        </div>
+                                    </div>                            
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+                <!-- Header navigation -->
+                <nav class="desktop-header__nav nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="nav__content">
+                                    <ul class="nav__list">
+                                        <li class="nav__item"><a href="#" class="nav__link nav__link_active">home</a></li>
+                                        <li class="nav__item"><a href="page.html" class="nav__link">about us</a></li>
+                                        <li class="nav__item"><a href="services.html" class="nav__link">services</a></li>
+                                        <li class="nav__item"><a href="projects.html" class="nav__link">projects</a></li>
+                                        <li class="nav__item"><a href="blog.html" class="nav__link">blog</a></li>
+                                        <li class="nav__item"><a href="contacts.html" class="nav__link">contact us</a></li>
+                                    </ul>
+                                    <!--<a href="#" class="desktop-header__question button button_dark">Have Any Questions?</a>-->
+                                    <a href="#popup" class="desktop-header__question button button_dark popup-link">Have Any Questions?</a>
+                                </div>       
+                            </div>
+                        </div>                                     
+                    </div>
+                </nav> 
+                <!-- /Header navigation -->                    
+            </div>        
+            <!-- /header bottom -->      
+        </header>
+         <!-- /DESKTOP HEADER -->
+           

@@ -1,0 +1,76 @@
+/* PAGINATION */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal!important;
+}
+
+.pagination {    
+    .nav-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 -4px;
+        .page-numbers{
+            text-decoration: none;
+            background-color: $color-middle-lighter;
+            color: $color-main;
+            display: block;
+            font-family: $text-font;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23px;
+            padding: 10px 17px 8px;
+            transition: $transition-time;
+            margin: 0 4px;
+        }
+        .page-numbers.current{
+            background-color: $color-main;
+            color: $color-light;
+        }
+        a.page-numbers{
+            &:hover{
+                background-color: $color-accent;
+                color: $color-light;
+                transition: $transition-time;
+            }
+        }
+    }
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -4px;
+    .nav-links{
+        a{  
+            display: block;
+            text-decoration: none;
+            background-color: $color-middle-lighter;
+            color: $color-main;
+            display: block;
+            font-family: $text-font;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23px;
+            padding: 10px 17px 8px;
+            transition: $transition-time;
+            margin: 0 4px;
+            &:hover{
+                background-color: $color-accent;
+                color: $color-light;
+                transition: $transition-time;
+            }
+        }
+        
+    }
+}

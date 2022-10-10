@@ -5,10 +5,18 @@
 @import 'config';
 @import 'fonts';
 @import 'vars';
-
 //@import 'blocks/**/*';
-// import Swiper styles
+
+//import animations styles
+//@import 'node_modules/animate';
+@import 'blocks/animate';
+
+//import datapic styles
+@import 'node_modules/vanillajs-datepicker/sass/datepicker'; 
+
+//import Swiper styles
 @import 'node_modules/swiper/swiper';
+
 @import 'blocks/fontawesome.scss';
 @import 'blocks/button';
 @import 'blocks/input';
@@ -40,7 +48,17 @@
 @import 'blocks/blog';
 @import 'blocks/subscribe';
 @import 'blocks/footer';
-
+@import 'blocks/backToTop';
+@import 'blocks/popup';
+@import 'blocks/page';
+@import 'blocks/breadcrumbs';
+@import 'blocks/pagination';
+@import 'blocks/comment-form';
+@import 'blocks/sidebar';
+@import 'blocks/table';
+@import 'blocks/search-form';
+@import 'blocks/search-results';
+@import 'blocks/404-page';
 *{
     margin: 0;
     padding: 0;
@@ -67,4 +85,18 @@ body{
     line-height: 27px;
     letter-spacing: 0.36px;
     background-color: $color-light;
+}
+
+html, body{
+    height: 100%; /* for bottom footer */
+
+}
+.wrapper{
+    min-height: 100%;        /* for bottom footer */
+    display: flex;           /* for bottom footer */
+    flex-direction: column;  /* for bottom footer */
+
+}
+.main{
+    flex: 1 1 auto;   /* for bottom footer */
 }

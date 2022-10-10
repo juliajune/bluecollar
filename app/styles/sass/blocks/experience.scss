@@ -3,11 +3,19 @@
 /* EXPERIENCE */
 .experience{
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-wrap: nowrap;    
+    flex-direction: column;
+    @media screen and (min-width: 576px){
+        flex-direction: row; 
+        align-items: center;   
+    }
 
-    &__badge{
-       width: 38%; 
+    &__badge{   
+        margin-bottom: 20px;     
+        @media screen and (min-width: 576px){
+            width: 38%;
+            margin-bottom: 0px;
+       }
     }
     &__list{
         list-style-type: ' - ';
@@ -20,8 +28,11 @@
 
 .experience-badge{
     background-color: $color-middle-lighter;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
+    @media screen and (min-width: 576px){
+        padding: 30px;    
+    }
     &__number{
         font-family: $title-font;
         color: $color-accent;

@@ -1,4 +1,5 @@
 	
+	
 	<!-- FOOTER -->
 	<footer class="footer">
 		<!-- footer top -->
@@ -10,7 +11,7 @@
 						<span class="snippet__icon round-icon round-icon_accent round-icon_big"><i class="fa-regular fa-envelope"></i></span>
 						<div class="snippet__content">
 							<h5 class="snippet__title">mail us</h5>
-							<a href="Info@bluecollar.com" class="snippet__link" target="_blank">Info@bluecollar.com</a>							
+							<a href="mailto:Info@bluecollar.com" class="snippet__link" target="_blank">Info@bluecollar.com</a>						
 						</div>
 					</div>
 				</div>
@@ -58,11 +59,9 @@
 							<div class="footer__widget footer-widget">
 								<h5 class="footer-widget__title">Explore</h5>
 								<ul class="footer-widget__list">
-									<li class="footer-widget__item"><a href="#">about us</a></li>
-									<li class="footer-widget__item"><a href="#">Pricing</a></li>
-									<li class="footer-widget__item"><a href="#">team</a></li>
-									<li class="footer-widget__item"><a href="#">blog</a></li>
-									<li class="footer-widget__item"><a href="#">contact us</a></li>
+									<li class="footer-widget__item"><a href="page.html">about us</a></li>
+									<li class="footer-widget__item"><a href="blog.html">blog</a></li>
+									<li class="footer-widget__item"><a href="contacts.html">contact us</a></li>
 								</ul>
 							</div>
 						</div>
@@ -70,11 +69,11 @@
 							<div class="footer__widget footer-widget">
 								<h5 class="footer-widget__title">Quick Links</h5>
 								<ul class="footer-widget__list">
-									<li class="footer-widget__item"><a href="#">Home</a></li>
-									<li class="footer-widget__item"><a href="#">Services</a></li>
-									<li class="footer-widget__item"><a href="#">Service Single</a></li>
-									<li class="footer-widget__item"><a href="#">Projects</a></li>
-									<li class="footer-widget__item"><a href="#">Projects Single</a></li>
+									<li class="footer-widget__item"><a href="index.html">Home</a></li>
+									<li class="footer-widget__item"><a href="services.html">Services</a></li>
+									<li class="footer-widget__item"><a href="single-service.html">Service Single</a></li>
+									<li class="footer-widget__item"><a href="projects.html">Projects</a></li>
+									<li class="footer-widget__item"><a href="single-project.html">Projects Single</a></li>
 								</ul>
 							</div>
 						</div>
@@ -84,11 +83,10 @@
 					<div class="footer__widget footer-widget">
 						<h5 class="footer-widget__title">Utility Pages</h5>
 						<ul class="footer-widget__list">
-							<li class="footer-widget__item"><a href="#">Style Guide</a></li>
-							<li class="footer-widget__item"><a href="#">Changelog</a></li>
-							<li class="footer-widget__item"><a href="#">Licenses</a></li>
-							<li class="footer-widget__item"><a href="#">Protected Page</a></li>
 							<li class="footer-widget__item"><a href="#">404 Page</a></li>
+							<li class="footer-widget__item"><a href="page.html">about us</a></li>
+							<li class="footer-widget__item"><a href="blog.html">blog</a></li>
+							<li class="footer-widget__item"><a href="contacts.html">contact us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -97,8 +95,98 @@
 		<!-- /footer bottom -->
 	</footer>
 	<!-- /FOOTER -->
-	
-	<script src="js/app.min.js"></script>
+</div>
+<!-- /WRAPPER -->	
+<!--BACK TO TOP BUTTON -->
+<a href="#" id="top"><i class="fa-solid fa-chevron-up"></i></a>
+<!--/BACK TO TOP BUTTON -->	
+
+<!-- Popup in header-->
+<div id="popup" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="#header" class="popup__close close-popup">X</a>
+			<div class="popup__title">Ask your question</div>
+			<div class="popup__text">
+				<form class="form" method="post" action="#">
+					<input type="text" class="form__field  input" name="username" placeholder="your name" tabindex="1" required>
+					<input type="email" class="form__field  input" name="email" placeholder="your email" tabindex="2" required>
+					<input type="text" class="form__field input" name="phone" placeholder="phone number" tabindex="3" required>
+					<textarea class="form__field form__textarea textarea" name="message" placeholder="Your question" tabindex="5" required></textarea>
+					<input type="submit" class="form__field form__submit button" value="submit">
+				</form>	
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Popup in header-->
+
+<!-- Price plan popup-->
+<div id="plan_basic" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="#header" class="popup__close close-popup">X</a>
+			<div class="popup__title">Buy plan</div>
+			<div class="popup__text">
+				<form class="form" method="post" action="#">
+					<p class="form__field plan-title">Basic</p>
+					<input type="hidden" name="plan" value="basic">
+					<p class="form__field plan-price">$ 599</p>
+					<input type="hidden" name="cost" value="$ 599">
+					<input type="text" class="form__field  input" name="username" placeholder="your name" tabindex="1" required>
+					<input type="email" class="form__field  input" name="email" placeholder="your email" tabindex="2" required>
+					<input type="text" class="form__field input" name="phone" placeholder="phone number" tabindex="3" required>
+					<input type="submit" class="form__field form__submit button" value="submit">
+				</form>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="plan_standart" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="#header" class="popup__close close-popup">X</a>
+			<div class="popup__title">Buy plan</div>
+			<div class="popup__text">
+				<form class="form" method="post" action="#">
+					<p class="form__field plan-title">Standart</p>
+					<input type="hidden" name="plan" value="standart">
+					<p class="form__field plan-price">$ 699</p>
+					<input type="hidden" name="cost" value="$ 699">
+					<input type="text" class="form__field  input" name="username" placeholder="your name" tabindex="1" required>
+					<input type="email" class="form__field  input" name="email" placeholder="your email" tabindex="2" required>
+					<input type="text" class="form__field input" name="phone" placeholder="phone number" tabindex="3" required>
+					<input type="submit" class="form__field form__submit button" value="submit">
+				</form>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="plan_professional" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="#header" class="popup__close close-popup">X</a>
+			<div class="popup__title">Buy plan</div>
+			<div class="popup__text">
+				<form class="form" method="post" action="#">
+					<p class="form__field plan-title">Professional</p>
+					<input type="hidden" name="plan" value="professional">
+					<p class="form__field plan-price">$ 799</p>
+					<input type="hidden" name="cost" value="$ 799">
+					<input type="text" class="form__field  input" name="username" placeholder="your name" tabindex="1" required>
+					<input type="email" class="form__field  input" name="email" placeholder="your email" tabindex="2" required>
+					<input type="text" class="form__field input" name="phone" placeholder="phone number" tabindex="3" required>
+					<input type="submit" class="form__field form__submit button" value="submit">
+				</form>	
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Price plan popup-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>  -->   
+<script src="js/app.min.js"></script>
 
 </body>
 </html>

@@ -5,11 +5,16 @@
     font-size: 17px;
     line-height: 27px;
     color: $color-middle;
-    padding: 18px;
+    //padding: 18px;
     border: 1px solid $color-middle-normal;
     transition: $transition-time;
     //width: 100%;
     padding: 18px 44px;
+    &_small{
+        padding: 12px 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
     &:focus{
         border-color: $color-main;  
     }

@@ -1,0 +1,43 @@
+/* SIDEBAR */
+.sidebar{
+    &__widget:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+
+/* sidebar widget*/
+.sidebar-widget{
+    &__title{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    &__snippet{
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* Widget list */
+.widget-list{
+    &__link{
+        text-decoration: none;
+        color: $color-main;
+        display: block;
+        font-family: Inter,sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: .3px;
+        line-height: 23px;
+        padding: 20px; 
+        transition: $transition-time;      
+        &_active{
+            background-color: $color-accent;
+            pointer-events: none;       
+        }
+        &:hover{
+            background-color: $color-main;
+            color: $color-accent 
+        }        
+    }
+}

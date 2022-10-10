@@ -4,13 +4,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 140px 80px 140px 80px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     &__content{
         background-color: rgba(28, 39, 82, 0.86);
-        padding: 100px 80px 100px 80px;
+        padding: 40px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        @media screen and (min-width: 1024px){
+            padding: 100px 80px 100px 80px;    
+        }
     }    
 }
 

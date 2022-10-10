@@ -1,12 +1,11 @@
 .blog{
-    padding: 150px 0 90px 0;
+    padding: 40px 0px;
+    @media screen and (min-width: 1024px){
+        padding: 150px 0 90px 0;   
+    }
     &__title{
         margin-bottom: 40px;
     }
-}
-
-.post-exerpt{
-
 }
 
 .post{
@@ -59,9 +58,12 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    
     &__item{
-        min-width: 180px;
+        @media screen and (min-width: 1024px){
+            min-width: 180px;
+        }
     }
 }
 
@@ -93,11 +95,16 @@ a.info-item{
 .post-title{
     font-family: $title-font;
     color: $color-main;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 42px;
+    line-height: 22px;
     letter-spacing: 0.36px;
     text-transform: capitalize;
+    @media screen and (min-width: 1024px){
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 0.36px;
+    }
     a{
         text-decoration: none;
         color: inherit;

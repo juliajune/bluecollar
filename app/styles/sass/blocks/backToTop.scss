@@ -1,0 +1,23 @@
+/*Back to top buttom styles*/
+
+#top{
+    display: none;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	z-index: 1;
+	bottom: 20px;
+	right: 20px;
+	background-color: $color-middle;
+	border-radius: 3px;
+	transition: $transition-time;
+    color: $color-light;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    &:hover{
+        background-color: $color-middle-light;
+        color: $color-main;
+		transition: $transition-time;
+    }
+} 	

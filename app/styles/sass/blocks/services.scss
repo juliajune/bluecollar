@@ -1,6 +1,9 @@
 /* SERVICES */
 .services{    
-    padding: 250px 0 118px 0;
+    padding: 40px 0px;
+    @media screen and (min-width: 1024px){
+        padding: 250px 0 118px 0;
+    }
 }
 
 .service{

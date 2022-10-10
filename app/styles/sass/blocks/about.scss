@@ -1,6 +1,9 @@
 /* ABOUT CONTENT */
 .about{
-    padding: 138px 0px;
+    padding: 40px 0px;
+    @media screen and (min-width: 1024px){ 
+        padding: 138px 0px;
+    }
     &__body{
         padding: 20px;
     }

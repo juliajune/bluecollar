@@ -1,7 +1,10 @@
 /* SUBSCRIBE */
 .subscribe{
-    padding: 145px 0px 50px 0px;
+    padding: 40px 0px;
     color: $color-main;
+    @media screen and (min-width: 1024px){
+        padding: 145px 0px 50px 0px;
+    }
     &__title{
         margin-bottom: 10px;
     }
@@ -14,6 +17,8 @@
         flex-grow: 1;
     }
     &__button{
-        min-width: 180px;
+        @media screen and (min-width: 1024px){
+            min-width: 180px;
+        }
     }
 }

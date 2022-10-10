@@ -32,8 +32,11 @@
     }
     &_small{
         font-size: 17px;
-        line-height: 27px;
-        
+        line-height: 27px;        
+    }
+
+    &_smaller{
+        padding: 8px 15px;
     }
 }
 /*-- /BUTTON --*/

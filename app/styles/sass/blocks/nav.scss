@@ -1,15 +1,23 @@
 .nav{
     
     min-height: 40px;
-    
-    &__list{
+    &__content{
+        display: flex;
+        align-items: center;   
+        justify-content: space-between;    
+        flex-direction: row;
         background-color: $color-accent;
+        padding: 0px 5px;
+    }
+    
+    &__list{       
         display: flex;
         align-items: center;       
         flex-direction: row;
+      
     }
     &__item{
-        padding: 20px 26px;
+        padding: 26px 26px;
     }
     &__link{
         display: inline-block;
